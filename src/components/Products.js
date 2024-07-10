@@ -41,8 +41,8 @@ const Products = () => {
   return (
     <div>
       <ul className="products-container">
-        {DUMMY_PRODUCTS.map((product, index) => (
-          <li key={index}>
+        {DUMMY_PRODUCTS.map((product) => (
+          <li key={product.id}>
             <Product
               id={product.id}
               name={product.name}
